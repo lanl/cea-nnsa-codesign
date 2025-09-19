@@ -4,22 +4,49 @@ title: CEA-NNSA BoF
 subtitle: 
 ---
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-  <div style="flex: 1 1 40%; text-align: center;">
-    <img src="/cea-nnsa-codesign/assets/img/cea.png" style="max-width: 60%; height: auto;">
+<style>
+  .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .logo-item {
+    flex: 1 1 40%;  /* two per row roughly */
+    text-align: center;
+  }
+  .logo-item img {
+    max-height: 100px;   /* force all logos to be no taller than this */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;  /* preserve aspect ratio, avoid stretching */
+  }
+
+  /* Responsive: on narrow screens break to one logo per row */
+  @media (max-width: 600px) {
+    .logo-item {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<div class="logo-grid">
+
+  <div class="logo-item">
+    <img src="/cea-nnsa-codesign/assets/img/cea.png" alt="CEA logo">
   </div>
 
-  <div style="flex: 1 1 40%; text-align: center;">
-    <img src="/cea-nnsa-codesign/assets/img/llnl.png" style="max-width: 60%; height: auto;">
+  <div class="logo-item">
+    <img src="/cea-nnsa-codesign/assets/img/llnl.png" alt="LLNL logo">
   </div>
 
-  <div style="flex: 1 1 40%; text-align: center;">
-    <img src="/cea-nnsa-codesign/assets/img/snl.png" style="max-width: 60%; height: auto;">
+  <div class="logo-item">
+    <img src="/cea-nnsa-codesign/assets/img/snl.png" alt="SNL logo">
   </div>
 
-  <div style="flex: 1 1 40%; text-align: center;">
-    <img src="/cea-nnsa-codesign/assets/img/lanl.webp" style="max-width: 60%; height: auto;">
+  <div class="logo-item">
+    <img src="/cea-nnsa-codesign/assets/img/lanl.webp" alt="LANL logo">
   </div>
 
 </div>
