@@ -20,8 +20,9 @@ author: CEA-NNSA Co-Design Team
 ###############################################
 
 navbar-links:
-  BoF: "BoF"
-  Contact: "contact"
+  Home: "index"
+  BoF: "bof_sc25"
+  Contact: "contacts"
 
 ################
 # --- Logo --- #
